@@ -1,0 +1,117 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="https://unpkg.com/tachyons@4.9.0/css/tachyons.min.css"/>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body class="sans-serif mw7 center">
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <header class="ph3">
+            <h1 class="f3">
+                <img src="img/logo.svg" class="w-30" alt="">
+            </h1>
+        </header>
+        <main class="ph3">
+            <div>
+                <p class="ttu black-50 f6 lh-copy">Sending books from Safari Online to your Kindle</p>
+            </div>
+            <hr>
+            <div class="pv5">
+                <form class="mw7 center">
+                    <fieldset class="cf bn ma0 pa0">
+                        <legend class="pa0 f5 f4-ns mb3 black-80 b">Enter the book url from Safari Online here</legend>
+                        <div class="cf">
+                        <label class="clip" for="email-address">Email Address</label>
+                        <input class="f6 f5-l input-reset bn fl black-80 bg-black-05 pa3 lh-solid w-100 w-75-m w-80-l br2-ns br--left-ns" placeholder="Example: https://www.safaribooksonline.com/library/view/9780134494272" type="text" name="email-address" value="" id="email-address">
+                        <input class="f6 f5-l button-reset fl pv3 tc bn bg-animate bg-green hover-bg-black white pointer w-100 w-25-m w-20-l br2-ns br--right-ns" type="submit" value="Send to Kindle">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div>
+                <h3>Goodreads</h3>
+                    <div class="cf mb4">
+                    <div class="fl w-50">
+                        <div class="book grow shadow-1 br2 mr3 fl w-40">
+                            <a href="https://www.goodreads.com/book/show/19816540-creativity-inc">
+                                <img src="https://www.safaribooksonline.com/library/cover/9780071614146/360h/" alt="Overcoming the Unseen Forces That Stand in the Way of True Inspiration">
+                            </a>
+                        </div>
+                        <div class="book-description fl w-50">
+                            <span class="db f6 mb3 black-50">Anyone can learn to invest wisely with this bestselling investment system!</span>
+                            <span class="db f6 black truncate">by <span class="b">William O'Neil</span></span>
+                            <a href="checkout.html" class="link"><button class="db bg-green mt3 white br2 f6 pa2 bn">Send To Kindle</button></a>
+                        </div>
+                    </div>
+                    <div class="fl w-50">
+                        <div class="book grow shadow-1 br2 mr3 fl w-40">
+                            <a href="https://www.goodreads.com/book/show/19816540-creativity-inc">
+                                <img src="https://www.safaribooksonline.com/library/cover/9781788395014/360h/" alt="Overcoming the Unseen Forces That Stand in the Way of True Inspiration">
+                            </a>
+                        </div>
+                        <div class="book-description fl w-50">
+                            <span class="db f6 mb3 black-50">Learning Path: React: Make Stunning React Websites</span>
+                            <span class="db f6 black truncate">by <span class="b">Taabish Khan - Curator</span></span>
+                            <button class="db bg-green mt3 white br2 f6 pa2 bn">Send To Kindle</button>
+                        </div>
+                    </div>
+
+                    </div>
+                    <div class="cf mb4">
+                        <div class="fl w-50">
+                            <div class="book grow shadow-1 br2 mr3 fl w-40">
+                                <a href="https://www.goodreads.com/book/show/19816540-creativity-inc">
+                                    <img src="https://www.safaribooksonline.com/library/cover/9781484233153/360h/" alt="Overcoming the Unseen Forces That Stand in the Way of True Inspiration">
+                                </a>
+                            </div>
+                            <div class="book-description fl w-50">
+                                <span class="db f6 mb3 black-50">Data Mining Algorithms in C++: Data Patterns and Algorithms for Modern Applications</span>
+                                <span class="db f6 black truncate">by <span class="b">Timothy Masters</span></span>
+                                <button class="db bg-green mt3 white br2 f6 pa2 bn">Send To Kindle</button>
+                            </div>
+                        </div>
+                        <div class="fl w-50">
+                            <div class="book grow shadow-1 br2 mr3 fl w-40">
+                                <a href="https://www.goodreads.com/book/show/19816540-creativity-inc">
+                                    <img src="https://www.safaribooksonline.com/library/cover/9781787124660/360h/" alt="Overcoming the Unseen Forces That Stand in the Way of True Inspiration">
+                                </a>
+                            </div>
+                            <div class="book-description fl w-50">
+                                <span class="db f6 mb3 black-50">JavaScript: Functional Programming for JavaScript Developers</span>
+                                <span class="db f6 black truncate">by <span class="b">Dan Mantyla, Simon Timms, Ved Antani</span></span>
+                                <button class="db bg-green mt3 white br2 f6 pa2 bn">Send To Kindle</button>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div id="modal"></div>
+        </main>
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <script>
+            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    </body>
+</html>
